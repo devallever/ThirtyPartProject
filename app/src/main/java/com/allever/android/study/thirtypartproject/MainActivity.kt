@@ -1,5 +1,6 @@
 package com.allever.android.study.thirtypartproject
 
+import android.content.Intent
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
@@ -9,7 +10,9 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
+import com.allever.android.study.thirty.retrofit.demo.RetrofitDemoActivity
 import com.allever.android.study.thirtypartproject.databinding.ActivityMainBinding
+import kotlinx.coroutines.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -31,6 +34,12 @@ class MainActivity : AppCompatActivity() {
         binding.fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
+        }
+
+        CoroutineScope(Dispatchers.Main).launch {
+            delay(2000)
+            val intent = Intent(this@MainActivity, RetrofitDemoActivity::class.java)
+            startActivity(intent)
         }
     }
 
