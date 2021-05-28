@@ -10,7 +10,7 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
-import com.allever.android.study.thirty.retrofit.demo.RetrofitDemoActivity
+import com.allever.android.study.thirty.okhttp.demo.OkHttpDemoActivity
 import com.allever.android.study.thirtypartproject.databinding.ActivityMainBinding
 import kotlinx.coroutines.*
 
@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
 
         CoroutineScope(Dispatchers.Main).launch {
             delay(2000)
-            val intent = Intent(this@MainActivity, RetrofitDemoActivity::class.java)
+            val intent = Intent(this@MainActivity, OkHttpDemoActivity::class.java)
             startActivity(intent)
         }
     }
