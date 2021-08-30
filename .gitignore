@@ -13,7 +13,7 @@
 /build
 /captures
 .externalNativeBuild
-.cxx
+.cxx入口
 local.properties
 
 

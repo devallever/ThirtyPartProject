@@ -19,6 +19,7 @@ class OkHttpDemoActivity: Activity(){
         val request = Request.Builder()
             .url(url)
             .build()
+        httpClient.newCall(request).execute()
         httpClient.newCall(request).enqueue(object : Callback{
             override fun onFailure(call: Call, e: IOException) {
                 Log.d(TAG, "请求失败: " + e.printStackTrace())
