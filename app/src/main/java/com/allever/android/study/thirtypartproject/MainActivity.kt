@@ -13,6 +13,7 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AlertDialog
 import com.allever.android.study.thirty.okhttp.demo.OkHttpDemoActivity
+import com.allever.android.study.thirty.rajava.demo.RxJavaDemoActivity
 import com.allever.android.study.thirtypartproject.databinding.ActivityMainBinding
 import kotlinx.coroutines.*
 
@@ -40,13 +41,13 @@ class MainActivity : AppCompatActivity() {
 
         CoroutineScope(Dispatchers.Main).launch {
             delay(2000)
-            val intent = Intent(this@MainActivity, OkHttpDemoActivity::class.java)
-//            startActivity(intent)
+            val intent = Intent(this@MainActivity, RxJavaDemoActivity::class.java)
+            startActivity(intent)
         }
 
-        val dialog = AlertDialog.Builder(this.applicationContext)
-            .setMessage("Message")
-        dialog.show()
+//        val dialog = AlertDialog.Builder(this.applicationContext)
+//            .setMessage("Message")
+//        dialog.show()
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
