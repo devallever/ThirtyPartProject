@@ -35,7 +35,7 @@ class FirstFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.buttonFirst.setOnClickListener {
-            val intent = Intent(activity, RxJavaDemoActivity::class.java)
+            val intent = Intent(activity, AndroidSourceActivity::class.java)
             startActivity(intent)
 //            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
         }

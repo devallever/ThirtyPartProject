@@ -9,6 +9,13 @@ import com.bumptech.glide.request.animation.GlideAnimation
 import com.bumptech.glide.request.target.SimpleTarget
 import java.io.File
 
+/**
+1.Glide图片加载的总体流程介绍
+2.Glide缓存机制做了哪些优化？
+3.Glide做了哪些内存优化？
+4.Glide如何管理生命周期?
+5.Glide怎么做大图加载?
+ */
 class GlideDemoActivity: Activity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

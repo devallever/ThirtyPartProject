@@ -12,6 +12,9 @@ import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
+/**
+ * https://juejin.cn/post/6963202606676049957 - 入木三分：从设计者角度看Retrofit原理
+ */
 class RetrofitDemoActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
